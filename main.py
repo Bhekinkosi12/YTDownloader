@@ -13,10 +13,12 @@ import threading
 import time
 from pytube import streams
 
+
 sg.theme('TanBlue')
 done = False
 title = ''
 streams = None
+
 
 def download_thread(url,filepath) :
     global done, title
@@ -29,6 +31,8 @@ def download_thread(url,filepath) :
     stream.download()
     done = True
 
+
+    
    
 
 
